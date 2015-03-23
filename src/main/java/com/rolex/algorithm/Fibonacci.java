@@ -30,7 +30,7 @@ public class Fibonacci {
         if (month == 0){
             return 0;
         }else if (month == 1 || month == 2) {
-            return 1;
+            return 1; 
         } else {
             return getCount(month - 1) + getCount(month - 2);
         }
