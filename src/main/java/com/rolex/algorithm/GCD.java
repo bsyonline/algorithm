@@ -4,10 +4,8 @@
  */
 package com.rolex.algorithm;
 
-import java.util.List;
-
 /**
- * Created with IntelliJ IDEA.
+ * 最大公约数(m,n)-碾除法
  * User: rolex
  * Date: 2015/3/30
  * version: 1.0
@@ -15,24 +13,27 @@ import java.util.List;
 public class GCD {
 
     public static void main(String[] args) {
-
+        GCD gcd = new GCD();
+        System.out.println(gcd.gcd(319, 377));
     }
 
-    private int print(int m,int n){
-        List<Integer> l1 = qualityFactor(m);
-        List<Integer> l2 = qualityFactor(n);
-        l1.remove(l1.size()-1);
-        l2.remove(l2.size()-1);
-        int result = 1;
-        for(Integer i : l1){
-            result *= i;
+    public int gcd(int m, int n) {
+        int big;
+        int small;
+        int result;
+        if (m > n) {
+            big = m;
+            small = n;
+        } else {
+            big = n;
+            small = m;
+        }
+        if (big % small != 0) {
+            result = gcd(small, big % small);
+        } else {
+            result = small;
         }
         return result;
+
     }
-
-    private List qualityFactor(int i){
-        return null;
-    }
-
-
 }
