@@ -1,5 +1,5 @@
 /*
- * @(#)QualityFactor.java	1.0 2015/3/30
+ * @(#)QualityFactor.java	1.0 2015/3/26
  *
  */
 package com.rolex.algorithm;
@@ -9,21 +9,21 @@ import java.util.List;
 
 /**
  * 每个合数都可以写成几个质数相乘的形式。其中每个质数都是这个合数的因数，叫做这个合数的分解质因数。如 90 = 2 * 3 * 5
- * <p/>
+ *
  * 1.给点数n，求1到n的所有素数。
  * 2.如果n不是素数，用第一个质数2开始除，能整除则商继续用从2开始除。
  * 3.如果不能整除，换下一个质数，直到商等于质数。
- * <p/>
+ *
  * User: rolex
- * Date: 2015/3/30
+ * Date: 2015/3/26
  * version: 1.0
  */
-public class QualityFactor {
+public class Algo0326 {
 
     private boolean flag = false;
 
     public static void main(String[] args) {
-        QualityFactor qf = new QualityFactor();
+        Algo0326 qf = new Algo0326();
         qf.print(5);
 
     }

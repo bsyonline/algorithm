@@ -1,5 +1,5 @@
 /*
- * @(#)NarcissisticNumber.java	1.0 2015/3/30
+ * @(#)NarcissisticNumber.java	1.0 2015/3/25
  *
  */
 package com.rolex.algorithm;
@@ -8,10 +8,10 @@ package com.rolex.algorithm;
  * 水仙花数是指一个 n 位数 ( n≥3 )，它的每个位上的数字的 n 次幂之和等于它本身。（例如：1^3 + 5^3+ 3^3 = 153）
  *
  * User: rolex
- * Date: 2015/3/30
+ * Date: 2015/3/25
  * version: 1.0
  */
-public class NarcissisticNumber {
+public class Algo0325 {
 
     public static void main(String[] args) {
         for (int i = 100; i < 1000; i++) {

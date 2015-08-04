@@ -1,5 +1,5 @@
 /*
- * @(#)PerfectNumber.java	1.0 2015/3/31
+ * @(#)PerfectNumber.java	1.0 2015/3/28
  *
  */
 package com.rolex.algorithm;
@@ -9,14 +9,15 @@ import java.util.List;
 
 /**
  * 完数，所有的真因子（即除了自身以外的约数）的和（即因子函数），恰好等于它本身
+ *
  * User: rolex
- * Date: 2015/3/31
+ * Date: 2015/3/28
  * version: 1.0
  */
-public class PerfectNumber {
+public class Algo0328 {
 
     public static void main(String[] args) {
-        PerfectNumber p = new PerfectNumber();
+        Algo0328 p = new Algo0328();
         System.out.println(p.perfectNumber(1000));
     }
 

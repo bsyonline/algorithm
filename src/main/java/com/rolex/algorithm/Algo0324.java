@@ -1,19 +1,20 @@
 /*
- * @(#)Prime.java	1.0 2015/3/25
+ * @(#)Prime.java	1.0 2015/3/24
  *
  */
 package com.rolex.algorithm;
 
 /**
- * Created with IntelliJ IDEA.
+ * 素数：除了1和它本身以外不再有其他的因数。
+ *
  * User: rolex
- * Date: 2015/3/25
+ * Date: 2015/3/24
  * version: 1.0
  */
-public class Prime {
+public class Algo0324 {
 
     public static void main(String[] args) {
-        Prime p = new Prime();
+        Algo0324 p = new Algo0324();
         long l1 = System.currentTimeMillis();
         p.print(10, 200);
         long l2 = System.currentTimeMillis();

@@ -10,11 +10,12 @@ package com.rolex.algorithm;
  * Date: 2015/3/30
  * version: 1.0
  */
-public class GCD {
+public class GCDLCM {
 
     public static void main(String[] args) {
-        GCD gcd = new GCD();
-        System.out.println(gcd.gcd(319, 377));
+        GCDLCM g = new GCDLCM();
+        System.out.println(g.gcd(319, 377));
+        System.out.println(g.lcm(18, 20));
     }
 
     public int gcd(int m, int n) {
@@ -35,5 +36,10 @@ public class GCD {
         }
         return result;
 
+    }
+
+    public int lcm(int m, int n) {
+        int g = gcd(m, n);
+        return m * n / g;
     }
 }

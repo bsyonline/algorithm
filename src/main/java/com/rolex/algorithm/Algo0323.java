@@ -17,22 +17,22 @@ package com.rolex.algorithm;
  * Date: 2015/3/23
  * version: 1.0
  */
-public class Fibonacci {
+public class Algo0323 {
 
     public static void main(String[] args) {
-        Fibonacci f = new Fibonacci();
+        Algo0323 f = new Algo0323();
         for (int i = 0; i < 20; i++) {
-            System.out.print(f.getCount(i) + ",");
+            System.out.print(f.fibonacci(i) + ",");
         }
     }
 
-    public int getCount(int month) {
+    public int fibonacci(int month) {
         if (month == 0) {
             return 0;
         } else if (month == 1 || month == 2) {
             return 1;
         } else {
-            return getCount(month - 1) + getCount(month - 2);
+            return fibonacci(month - 1) + fibonacci(month - 2);
         }
     }
 }
